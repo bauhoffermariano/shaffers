@@ -82,7 +82,7 @@ function pedido() {
         "Este es el alias de Schaffers";
         window.open(url, '_blank').focus();
         console.log(url)
-        // location.reload();
+        location.reload();
         } )
         btnBack.addEventListener("click", () => {
           cajaMsj.style.display = "none";
