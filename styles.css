@@ -301,3 +301,25 @@ background-color: #24c1b8;
 .container{
   padding-bottom: 100px;
 }
+
+.popUpIngr{
+  position: absolute;
+  display: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  z-index: 1;
+  height: 100vh;
+}
+.imgBurga1Pop{
+  grid-area: 2/2/3/3;
+  width: 80%;
+  background-color: #fff;
+  border: white solid 30px;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 0px -3px rgba(0,0,0,0.1);
+}
+.textIngr{
+ position: absolute;
+ grid-area: 2/2/3/3; 
+justify-self: center;
+}
