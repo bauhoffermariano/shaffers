@@ -12,9 +12,15 @@
 </head>
 
 
-<body>
+<body id="body">
 
   <div class="logoBox"><img src="shaffers_logo.png" id="logo" class="logoImg" alt=""></div>
+  
+  <div class="popUpIngr" id="popUpIngr">
+    <img src="hamburger.png" class="imgBurga1Pop" id="imgBurgaPop">
+    <span class="text textIngr">INGREDIENTES xD</span>
+  </div>
+
   <div class="popUpCenter" id="popUpCenter">
     <div class="popUp cajaMsj" id="cajaMsj">
       <span class="text" id="cajaMsjTexto"><span class="text">texto acá</span></span><br>
@@ -42,7 +48,7 @@
 
   <div class="infoPedido" id="infoPedido">
     <div class="burga burga1">
-      <img src="hamburger.png" class="imgBurga imgBurga1" alt="">
+      <img src="hamburger.png" class="imgBurga imgBurga1" id="imgBurga1">
       <div class="burgaInputs">
         <div class="burgaBtnCant">
           <span class="text">Keseso</span>
@@ -57,7 +63,7 @@
       </div>
     </div>
     <div class="burga burga2">
-      <img src="hamburger.png" class="imgBurga imgBurga2" alt="">
+      <img src="hamburger.png" class="imgBurga imgBurga2" id="imgBurga2" alt="">
       <div class="burgaInputs">
         <div class="burgaBtnCant">
           <span class="text">Ineludible</span>
@@ -73,7 +79,7 @@
     </div>
 
     <div class="burga burga3">
-      <img src="hamburger.png" class="imgBurga imgBurga3" alt="">
+      <img src="hamburger.png" class="imgBurga imgBurga3" id="imgBurga3"  alt="">
       <div class="burgaInputs">
         <div class="burgaBtnCant">
           <span class="text textDin">Sudamericana</span>
@@ -88,7 +94,7 @@
       </div>
     </div>
     <div class="burga burga4">
-      <img src="hamburger.png" class="imgBurga imgBurga4" alt="">
+      <img src="hamburger.png" class="imgBurga imgBurga4" id="imgBurga4"  alt="">
       <div class="burgaInputs">
         <div class="burgaBtnCant">
           <span class="text">Shäker</span>
@@ -118,7 +124,7 @@
     <button id="send" class="text sendBtn" onclick="pedido()"> ENVIAR</button>
   </div>
 </div>
-
+  <script src="popUpsIngredientes.js"></script>
   <script src="botons.js"></script>
   <script src="popUps.js"></script>
   <script src="takeAway.js"></script>
