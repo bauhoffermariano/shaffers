@@ -16,7 +16,7 @@ function pedido() {
   let cajaMsj= document.getElementById("cajaMsj");
   let cajaMsjTexto= document.getElementById("cajaMsjTexto");
   let btnBack = document.getElementById("volver");
-  let btnEnviar= document.getelementbyid("btnSend");
+  let btnEnviar= document.getelementbyid("btnEnviar");
   let cajaMsjBox=  document.getElementById("popUpCenter")
   let metodoPago = document.querySelectorAll("input[name='metodoPago']");
   
