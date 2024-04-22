@@ -4,7 +4,7 @@ function pedido() {
   let cantidades = [];
   let precios = [100, 200, 300, 400];
   let precioPapas = 50;
-  let nombresBurgas = ["suda", "kese", "shak", "inelu"];
+  let nombresBurgas = ["Keseso", "Ineludible", "Sudamericana", "Shäker"];
   let infoCliente = [
     document.getElementById("nombre").value,
     document.getElementById("direccion").value,
@@ -40,7 +40,7 @@ function pedido() {
   }
 
   
-  if (burgas0 === " ") {
+  if ((burgas0 === "0")|(burgas0===" ")) {
     cajaMsj.style.display = "inline-block";
     cajaMsjBox.style.zIndex="1"
     cajaMsj.style.zIndex="1";
@@ -67,13 +67,12 @@ function pedido() {
   }
 
   if ((burgas0 != " ")&((transferencia===true)|(efectivo===true))){
-    btnEnviar.style.display="inline-block";
+      btnEnviar.style.display="inline-block";
     cajaMsj.style.display = "inline-block";
     cajaMsjBox.style.zIndex="1"
     cajaMsj.style.zIndex="1";
     cajaMsjTexto.textContent = "¿Seguro?";
-    btnEnviar.addEventListener("click", ()=>{
-     
+    btnEnviar.addEventListener("click", ()=>{     
         url = "https://wa.me/+542224465613?text="+"Nombre:"+"%20"+nombre+"%0a"+
         "Dire:"+ "%20" + infoCliente[1]+ "%0a"+
         "Zona:"+ "%20" +infoCliente[2]+ "%0a"+"%0a"+
@@ -83,7 +82,7 @@ function pedido() {
         "Este es el alias de Schaffers";
         window.open(url, '_blank').focus();
         console.log(url)
-        location.reload();
+        // location.reload();
         } )
         btnBack.addEventListener("click", () => {
           cajaMsj.style.display = "none";
