@@ -1,0 +1,329 @@
+body {
+  background-color: #f6f7f3;
+  color: #e57917;
+  margin: 0;
+  padding:.5rem ;
+  width: 100%;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.text{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+.textDin{
+  /* font-size: clamp(1.3rem,6vw,3rem); */
+  font-size: 1.5rem;
+}
+/*____popUp____*/
+.popUp {
+  position: absolute;
+  width: 98%;
+  padding: 1rem 0;
+  /* border: 1px solid black; */
+  border-radius: .5rem;  
+  background-color: #ff8604;
+  box-shadow: 8px 8px 0px -3px rgba(0,0,0,0.1);
+  color: white;
+  text-align: center;
+  grid-area: 2/2/3/3;
+  display: none;
+  z-index: -1;
+}
+.popUpCenter{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  z-index: -1;
+}
+.infoCliente{
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
+ }
+
+.infoClienteBox{
+  grid-area: 2/2/3/3;
+  align-self: center;
+  justify-self: center;
+  background-color: #ff8604;
+  border: #e57917 solid 3px;
+  color: white;
+  border-radius: 10px;
+  padding-top: 2rem;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+/*__________*/
+
+.displayBlock{
+  display: block;
+  margin: 0 auto 1rem auto ;
+  background-color:#e7e7e7;
+  border: 1px solid black;
+  border-radius: 1rem;
+  height: 12%;
+  width: 60%;
+  font-family:"Lilita One", sans-serif;
+  font-size: 1.5rem;
+}
+::placeholder{
+  font-family: "Lilita One", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.optionZona{
+  text-align: center;
+}
+
+.takeAway{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nextBtn,
+.btnEnviar,
+.volver{
+  padding: .5rem 1rem;
+  border: #e57917 4px solid;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.nextBtn{ 
+  display: block;
+  margin: auto;
+  color:#e57917;
+  border: #000000 1px solid;
+  box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.1);
+  
+}
+.nextBtn:hover{
+  color: rgb(255, 255, 255);
+  /* border: rgb(0, 0, 0) solid 2px; */
+  background-color: #333;
+}
+.btnEnviar{
+  display: none;
+ }
+.btnEnviar,
+.volver{
+  margin-top: .5rem;
+}
+.btnEnviar:hover,
+.volver:hover{
+  background-color: #333;
+  color: white;
+}
+
+.infoPedido{
+  top: 0;
+  left: 0;
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+
+  grid-auto-rows:  auto;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1.5fr)); /* ACA */
+
+}
+.cantidad{
+  width: 2rem;
+  height: 1.6rem;
+  border: #da7405 solid 2px;
+}
+::placeholder{
+  font-family: "Lilita One", sans-serif;;
+}
+.burga{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  border-radius: 1rem;
+  align-items:  start;
+  justify-items: center;
+  align-items: start;
+  /* font-size: 1.5rem; */
+}
+.burgaInputs{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: .5rem;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+}
+.burgaBtnCant{
+  grid-area: 1/1/2/3;
+  justify-self: center;
+  text-align: center;
+}
+.burga1{
+  border: 7px solid #24c1b8;
+}
+.burga2{
+  border: 7px solid #a50100;
+}
+.burga3{
+  border:7px solid #26a33b;
+}
+.burga4{
+  border: 7px solid #da7405;
+}
+.imgBurga{
+  position: relative;
+  width: 95%;
+  margin-top: .2rem;
+  border-radius: 0.5rem;
+}
+.imgBurga1{
+background-color: #24c1b8;
+
+}
+.imgBurga2{
+  background-color: #a50100;
+ 
+}
+.imgBurga3{
+  background-color: #26a33b;
+
+}
+.imgBurga4{
+  background-color: #da7405;
+  
+}
+.metodoPagoBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.metodoPago{
+  width: 30px;
+  height: 30px;
+}
+
+.metodoPagoText{
+  justify-self: center;
+  align-self: center;
+  border-bottom:#da7405 3px solid;
+  margin: 0.5rem;;
+}
+.totalText{
+  border: 3px solid #e57917;
+  justify-self: center;
+  border-radius: 1rem;
+  line-height: 2rem;
+  margin: .5rem 20%;
+  font-size: 2rem;
+  text-align: center;
+
+}
+.sendBtn{
+  border-radius: 4rem;
+  background-color: #da7405;
+  border: solid 3px white;
+  color: #333;
+  margin-top: 1rem;
+  width: 100%;
+  height: 80px;
+}
+.sendBtn:hover{
+  background-color: #333;
+  border: solid 3px #da7405;
+  color: white;
+}
+ /* .infoCliente, */
+ .infoPedido,
+ .pagoBox
+ /* .logoImg */
+ {                       /*//////////////////////////////////// */
+  display: none;
+
+} 
+.logoBox{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+.logoImg{
+  grid-area: 1/2/2/3;
+  height: 100px;
+  z-index: 1;
+  margin-top: .6rem;
+  background-color: white;
+  border-radius: .8rem;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.inputNumberBox{
+  display: flex;
+  justify-content: center;
+}
+.botonInDe{
+  display: inline-block;
+  background-color: #777777;
+  color: white;
+  border: #da7405 solid 2px;
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.botonIn{
+  border-radius: 0 1rem 1rem 0;
+}
+.botonDe{
+  border-radius: 1rem 0 0 1rem;
+}
+.chkCombo{
+  height: 20px;
+  width: 20px;
+  margin: 0;
+}
+.chkCombo1{
+  justify-self: center;
+}
+
+.container{
+  padding-bottom: 100px;
+}
+
+.popUpIngr{
+  position: absolute;
+  display: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  z-index: 1;
+  height: 100vh;
+}
+.imgBurga1Pop{
+  grid-area: 2/2/3/3;
+  width: 80%;
+  background-color: #fff;
+  border: white solid 30px;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 0px -3px rgba(0,0,0,0.1);
+}
+.textIngr{
+ position: absolute;
+ grid-area: 2/2/3/3; 
+justify-self: center;
+}
+.cantidadCombo{
+  width: 2rem;
+  height: 1.6rem;
+}
