@@ -137,9 +137,12 @@ body {
 
 }
 .cantidad{
-  width: 1rem;
+  width: 2rem;
   height: 1.6rem;
   border: #da7405 solid 2px;
+}
+::placeholder{
+  font-family: "Lilita One", sans-serif;;
 }
 .burga{
   display: grid;
@@ -180,7 +183,8 @@ body {
 }
 .imgBurga{
   position: relative;
-  width: 100%;
+  width: 95%;
+  margin-top: .2rem;
   border-radius: 0.5rem;
 }
 .imgBurga1{
