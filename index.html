@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <div class="logoBox"><img src="shaffers_logo.png" id="logo" class="logoImg" alt=""></div>
+  <div class="popUpCenter" id="popUpCenter">
+    <div class="popUp cajaMsj" id="cajaMsj">
+      <span class="text" id="cajaMsjTexto"><span class="text">texto acá</span></span><br>
+      <button class="btnEnviar" id="btnEnviar"><span class="text">Enviar</span></button>
+      <button class="volver" id="volver"><span class="text">Volver</span></button>
+    </div>
+  </div>
+  <div class="infoCliente" id="infoCliente">
+    <div class="infoClienteBox">
+      <input type="text" id="nombre" placeholder="Nombre" class="displayBlock" />
+      <div class=" takeAway">
+        <span class="text ">Take Away?</span><br><br>
+          <input type="checkbox" id="takeAwayBtn" class="chkCombo takeAwayBtn"/>
+      </div>
+      <input type="text" id="direccion" placeholder="Dirección" class="displayBlock" />
+
+      <select name="kornSanvi" id="zona" class="displayBlock" required>
+        <option disabled selected value class="optionZona">Zona</option> ////////////////
+        <option value="AlejandroKorn">Alejandro Korn</option>///////////////////
+        <option value="SanVicente">San Vicente</option>
+      </select>
+      <button class="nextBtn text" id="nextBtn">VAMO</button>
+    </div>
+  </div>
+
+  <div class="infoPedido" id="infoPedido">
+    <div class="burga burga1">
+      <img src="hamburger.png" class="imgBurga imgBurga1" alt="">
+      <div class="burgaInputs">
+        <div class="burgaBtnCant">
+          <span class="text">Keseso</span>
+          <div class="inputNumberBox">
+            <button id="decremento1" class="botonInDe botonDe">&nbsp;-</button>
+            <input type="number" id="burga1" class="cantidad" value="0" placeholder="0" min="0" readonly/>
+            <button id="incremento1" class="botonInDe botonIn">+</button>
+          </div>
+        </div>
+        <span class="text">Combo</span>
+        <input type="checkbox" id="papas1" class="chkCombo chkCombo1" />
+      </div>
+    </div>
+    <div class="burga burga2">
+      <img src="hamburger.png" class="imgBurga imgBurga2" alt="">
+      <div class="burgaInputs">
+        <div class="burgaBtnCant">
+          <span class="text">Ineludible</span>
+          <div class="inputNumberBox">
+            <button id="decremento2" class="botonInDe botonDe">&nbsp;-</button>
+            <input type="number" id="burga2" class="cantidad" value="0" placeholder="0" min="0" readonly/>
+            <button id="incremento2" class="botonInDe botonIn">+</button>
+          </div>
+        </div>
+        <span class="text">Combo</span>
+        <input type="checkbox" id="papas2" class="chkCombo chkCombo1" />
+      </div>
+    </div>
+
+    <div class="burga burga3">
+      <img src="hamburger.png" class="imgBurga imgBurga3" alt="">
+      <div class="burgaInputs">
+        <div class="burgaBtnCant">
+          <span class="text textDin">Sudamericana</span>
+          <div class="inputNumberBox">
+            <button id="decremento3" class="botonInDe botonDe">&nbsp;-</button>
+            <input type="number" id="burga3" class="cantidad" value="0" placeholder="0" min="0" readonly/>
+            <button id="incremento3" class="botonInDe botonIn">+</button>
+          </div>
+        </div>
+        <span class="text">Combo</span>
+        <input type="checkbox" id="papas3" class="chkCombo chkCombo1" />
+      </div>
+    </div>
+    <div class="burga burga4">
+      <img src="hamburger.png" class="imgBurga imgBurga4" alt="">
+      <div class="burgaInputs">
+        <div class="burgaBtnCant">
+          <span class="text">Shäker</span>
+          <div class="inputNumberBox">
+            <button id="decremento4" class="botonInDe botonDe">&nbsp;-</button>
+            <input type="number" id="burga4" class="cantidad" value="0" placeholder="0" min="0" readonly/>
+            <button id="incremento4" class="botonInDe botonIn">+</button>
+          </div>
+        </div>
+        <span class="text">Combo</span>
+        <input type="checkbox" id="papas4" class="chkCombo chkCombo1" />
+      </div>
+    </div>
+   
+  </div>
+  <div class="pagoBox" id="pagoBox">
+    <p class="text totalText">Total: $<span class="text" id="subtotalBox"> </span></p>
+    <p class="text metodoPagoText">PAGO</p>
+    
+    <div class="metodoPagoBox">
+      <span class="text">Efectivo</span>
+      <span class="text">Transferencia</span>
+      <input type="radio" name="metodoPago" class="metodoPago metodoPago1" id="efectivo" value="EFECTIVO" required />
+      <input type="radio" name="metodoPago" class="metodoPago metodoPago2" id="transferencia" value="TRANSFERENCIA"
+        required />
+    </div>
+    <button id="send" class="text sendBtn" onclick="pedido()"> ENVIAR</button>
+  </div>
+</div>
+
+  <script src="botons.js"></script>
+  <script src="popUps.js"></script>
+  <script src="takeAway.js"></script>
+  <script src="pedido.1.js"></script>
+  <script src="script-inputs-subtotal.js"></script>
+</body>
+
+</html>
